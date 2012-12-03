@@ -1,0 +1,10 @@
+.settings
+target
+target-eclipse
+.classpath
+.project
+.idea
+*.iml
+*.ipr
+*.iws
+*.log

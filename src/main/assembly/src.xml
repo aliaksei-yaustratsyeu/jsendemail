@@ -1,0 +1,32 @@
+<assembly>
+  <id>src</id>
+  <formats>
+    <format>zip</format>
+    <format>tar.gz</format>
+  </formats>
+  <fileSets>
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>/</outputDirectory>
+      <excludes>
+        <exclude>%regex[(?!((?!target/)[^/]+/)*src/).*target.*]</exclude>
+        <exclude>**/*.log</exclude>
+        <exclude>**/.gitignore</exclude>
+        <exclude>**/.gitattributes</exclude>
+        <exclude>*.iml</exclude>
+        <exclude>*.iws</exclude>
+        <exclude>*.ipr</exclude>
+      </excludes>
+    </fileSet>    
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>/</outputDirectory>
+      <includes>
+        <include>LICENSE.txt</include>
+        <include>NOTICE.txt</include>
+        <include>README.txt</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>
+
