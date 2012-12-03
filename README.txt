@@ -5,11 +5,17 @@ Example:
 
     jsendemail -from alex@yourdomain.com -to "anna@gmail.com,aleksey@gmail.com,andrey@tut.by" -s "Hi!" -m "How are you doing?" -a "d:\Dropbox\*.jpg;d:\photos\*.jpg"
 
+How to build:
+    Run the next maven command:
+        mvn clean package
+    
 How to use it:
 
-1) Set JSENDEMAIL_HOME environment variable to the jsendemail home directory.
+1) Unpack jsendemail-x.x.x-bin.zip or jsendemail-x.x.x-bin.tar.gz. 
 
-2) Go to the %JSENDEMAIL_HOME%\conf folder and configure your smtp credentials.
+2) Set JSENDEMAIL_HOME environment variable to the jsendemail home directory.
+
+3) Go to the %JSENDEMAIL_HOME%\conf folder and configure your smtp credentials.
 
     If you use Amazon SES you should set accessKey and secretKey properties in AwsCredentials.properties configuration file 
     or you can set username and password for Amazon SES smtp server in settings.properties file. If you want use accessKey and secretKey 
@@ -43,9 +49,9 @@ How to use it:
     
     If you want to use other smtp server you should change values for mail.host, mail.port, mail.username, mail.password properties.
 
-3) Go to the %JSENDEMAIL_HOME%\bin folder
+4) Go to the %JSENDEMAIL_HOME%\bin folder
 
-4) Run the jsendemail program with needed arguments.
+5) Run the jsendemail program with needed arguments.
 
 Command to run:
 
